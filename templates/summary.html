@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="form-group shadow-textarea">
+   
+    <form action="{{ url_for('get_summary')}}" method="POST">
+        <p class="font-weight-bold" style="font-size: 29px;
+        font-style: italic;
+        font-family: ui-serif;
+        font-variant: common-ligatures;">Enter Your Email Subject Here</p>
+        <textarea class="form-control z-depth-1 " name="article" class="email_area" style="width: 50%;
+        color: black;
+        height: 158px;
+        margin: 0px 328px;
+        /* border: darkred; */
+        border: 1px solid #9a1717;
+        border-radius: 42px;
+        text-align: center;
+        font-size: 20px;
+        /* color: #fff4fa; */
+        /* background-color: #d0b1c1; */
+    
+                " id="email_text" rows="3" placeholder="Write something here..."></textarea>
+        <button type="submit" class="btn btn-primary btn-sm btn-info" value="predictmail" style="width: 255px;
+        text-align: center;
+       
+    margin: 29px 7px 5px 77px;
+    border-radius: 1px;
+    border-color: #97f1e8;
+    background-color: #912fdc;
+    ">Predict</button>
+
+    </form>
+</div>
+
+
+{% endblock %}

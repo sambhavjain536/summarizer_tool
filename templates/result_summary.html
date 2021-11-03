@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- //for the icon of the image -->
+  <!--<link rel = "icon" href = "../static/img/homepage.png" type = "image/x-icon">-->
+  <link href="{{ url_for('static', filename='img/homepage.png') }}" rel="icon">
+  <title>Home</title>
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: fixed;
+        overflow: hidden;
+     z-index: 1; 
+    color: #fff;
+    transition-delay: inherit;
+    width: 100%;
+     background-color: #232221c4; ">
+
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <p class="text_dn" style="color: #FFF;">SpamDetectorLite</p>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" style="    float: right; font-weight: 900;">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <p class="text_dn" style="color: #FFF;">Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">
+              <p class="text_dn" style="color: #FFF;"> About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">
+              <p class="text_dn" style="color: #FFF;">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar end -->
+
+  <header style="margin: -71px 0px 0px 0px;">
+    <div class="container">
+      <div id='brand'>
+        <h1 class="hre">Your Document Summary</h1>
+      </div>
+    </div>
+  </header>
+
+  <p style="color:blue;font-size:20;text-align: center;   line-height: 3;"><b>Results for your commit</b></p>
+
+  <div class="results">
+          
+          <h3> {{ Summary }}%</h3>
+  </div>
+
+</body>
+
+</html>
